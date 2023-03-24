@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 vector3;
-    [SerializeField] private int speed;
+    //[SerializeField] private int speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
 
@@ -64,8 +64,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        vector3.z = speed;
-        vector3.y += gravity * Time.fixedDeltaTime;
+        //vector3.z = speed;
+        //vector3.y += gravity * Time.fixedDeltaTime;
         controller.Move(vector3 * Time.fixedDeltaTime);
     }
 }
